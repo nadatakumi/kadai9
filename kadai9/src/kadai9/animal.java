@@ -19,7 +19,7 @@ public class animal {
             double length = Double.parseDouble(parts[1]);
             int speed = Integer.parseInt(parts[2]);
 
-            // 学名を動物名に基づいて設定
+            // 動物名を設定
             String scientificName = getScientificName(name);
 
             // 出力
@@ -33,7 +33,7 @@ public class animal {
         scanner.close();
     }
     
-    // 学名を動物名に基づいて取得するメソッド
+    // 動物名を取得するメソッド
     private static String getScientificName(String name) {
         switch (name) {
             case "ライオン":
